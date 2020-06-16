@@ -19,6 +19,10 @@ class Ball {
         this.ctx.drawImage(this.image, this.ballPos.x, this.ballPos.y, this.ballSize.w, this.ballSize.h)
     }
 
+    jump() {
+        this.ballVel.y = 20
+    }
+
     move() {
         this.ballPos.x += this.ballVel.x
         this.ballVel.y += this.ballPhysics.gravity
